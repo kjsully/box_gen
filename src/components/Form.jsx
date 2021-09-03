@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 const Form = props => {
 
     const [color, setColor] = useState('')
-    const [height, setHeight] = useState('')
-    const [width, setWidth] = useState('')
+    const [height, setHeight] = useState(100)
+    const [width, setWidth] = useState(100)
 
     const {boxlist, setBoxlist} = props
 
@@ -16,8 +16,8 @@ const Form = props => {
             width
         }])
         setColor('')
-        setHeight('100')
-        setWidth('100')
+        setHeight(100)
+        setWidth(100)
     }
 
 
